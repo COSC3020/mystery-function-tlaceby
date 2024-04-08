@@ -12,3 +12,8 @@ function mystery(a) {
     else return a[0];
 }
 ```
+
+**Solution**
+
+This function finds the maximum value in the array which is passed in. Using recursion we check check each element in the array by shrinking it using the slice method. Eventualy this will return the only value in the array which we compare to subsequent calls of mystery(). This effectively reduces the size of the array by one element in each recursive call until it reaches the base case of a single element array.
+
